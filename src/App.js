@@ -17,7 +17,9 @@ const App = () => (
       <Route path='/even-clicks'>
         <EvenClicks />
       </Route>
-      <CountBy step={ 5 } />
+      <Route path='/count-by/:step' render={ ({ match }) => (
+        <CountBy step={ match.params.step } />
+      )} />
       <Route path='/hide-me'>
         <HideMe>Blah blah blah</HideMe>
       </Route>

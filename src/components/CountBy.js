@@ -13,7 +13,7 @@ class CountBy extends Component {
         const { number } = this.state;
         const { step } = this.props;
 
-        this.setState({ number: number + step });
+        this.setState({ number: number + +step });
         
     }
 
