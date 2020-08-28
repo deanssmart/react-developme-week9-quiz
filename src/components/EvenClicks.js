@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 
 class EvenClicks extends Component {
     constructor(props) {
