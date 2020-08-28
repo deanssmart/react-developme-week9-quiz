@@ -13,7 +13,9 @@ import Footer from './components/Footer';
 const App = () => (
   <Router>
     <main className="container">
-      <Multiplier x={ 5 } y ={ 7 } />
+      <Route path='/multiplier/:x/:y' render={ ({ match }) => (
+        <Multiplier x={ match.params.x } y ={ match.params.y } />
+      )} />
       <Route path='/even-clicks'>
         <EvenClicks />
       </Route>
