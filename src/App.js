@@ -3,11 +3,13 @@ import './App.css';
 
 import Multiplier from './components/Multiplier';
 import EvenClicks from './components/EvenClicks';
+import CountBy from './components/CountBy';
 
 const App = () => (
   <>
-    <Multiplier x={ 7 } y ={ 7 } />
+    <Multiplier x={ 5 } y ={ 7 } />
     <EvenClicks />
+    <CountBy step={ 5 } />
   </>
 );
 
