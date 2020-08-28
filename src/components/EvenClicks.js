@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from 'react-bootstrap/Button'
 
 class EvenClicks extends Component {
     constructor(props) {
@@ -23,12 +24,9 @@ class EvenClicks extends Component {
 
         return(
             <>
-                <button 
-                    className="btn btn-primary"
-                    onClick={ this.handleClick }
-                >
+                <Button variant="primary" onClick={ this.handleClick }>
                     { this.isEven() }
-                </button>
+                </Button>
             </>
         );
     }
