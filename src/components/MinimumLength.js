@@ -31,7 +31,7 @@ class MinimumLength extends Component {
                     className="form-control"
                 />
                 <p className="form-text text-muted">
-                    { this.lengthCalc( length ) }
+                    { this.lengthCalc(length) }
                 </p>                  
             </form>
         );
