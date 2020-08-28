@@ -23,7 +23,9 @@ const App = () => (
       <Route path='/hide-me'>
         <HideMe>Blah blah blah</HideMe>
       </Route>
-      <MinimumLength length={ 30 } />
+      <Route path='/minimum/:length' render={ ({ match }) => (
+        <MinimumLength length={ match.params.length } />
+      )} />
     </main>
     <Footer />
   </Router>
