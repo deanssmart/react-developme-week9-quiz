@@ -18,7 +18,9 @@ const App = () => (
         <EvenClicks />
       </Route>
       <CountBy step={ 5 } />
-      <HideMe>Blah blah blah</HideMe>
+      <Route path='/hide-me'>
+        <HideMe>Blah blah blah</HideMe>
+      </Route>
       <MinimumLength length={ 30 } />
     </main>
     <Footer />
