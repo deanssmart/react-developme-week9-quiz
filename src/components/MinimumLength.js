@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Form from 'react-bootstrap/Form'
 
 class MinimumLength extends Component {
     constructor(props) {
@@ -24,18 +25,23 @@ class MinimumLength extends Component {
         const { length } = this.props;
 
         return(
-            <form className="form-group">
-                <input 
-                    onChange={ this.handleChange }
-                    value={ input }
-                    className="form-control"
-                />
-                <p className="form-text text-muted">
-                    { this.lengthCalc(length) }
-                </p>                  
-            </form>
+            <Form>
+                <Form.Group controlId="formInput">
+                    <Form.Label>Length Check:</Form.Label>
+                    <Form.Control 
+                        type="text"
+                        placeholder="Type in me..."
+                        onChange={ this.handleChange }
+                        value={ input }
+                    />
+                    <Form.Text className="text-muted">
+                        { this.lengthCalc(length) }
+                    </Form.Text>
+                </Form.Group>
+            </Form>            
         );
     }
 }
 
 export default MinimumLength;
+
